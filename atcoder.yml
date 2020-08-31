@@ -1,0 +1,25 @@
+session_name: atcoder
+windows:
+- window_name: atcoder
+  layout: main-vertical
+  options:
+    main-pane-width: 130
+  panes:
+    - shell_command:
+        - mkdir {}
+        - cp atcoder.py {}/a.py
+        - cp atcoder.py {}/b.py
+        - cp atcoder.py {}/c.py
+        - cp atcoder.py {}/d.py
+        - cp atcoder.py {}/e.py
+        - cp atcoder.py {}/f.py
+        - cd {}
+        - vi -p a.py b.py c.py d.py e.py f.py
+    - shell_command:
+        - cd {}
+        - touch t
+        - python a.py < t
+        - clear
+    - shell_command:
+        - cd {}
+        - vi t
