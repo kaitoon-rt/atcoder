@@ -1,6 +1,5 @@
 import sys
-import numpy as np
-from math import ceil as C, floor as F, sqrt
+from math import ceil as C, floor as F, sqrt, gcd as G
 from collections import defaultdict as D, Counter as CNT
 from functools import reduce as R
 import heapq as HQ
